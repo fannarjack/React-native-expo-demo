@@ -10,20 +10,19 @@ type Props = {
 };
 
 const Vinbudin = ({ products }: Props) => {
-  const [wines, setWines] = useState<Product[]>(products);
   if (!products) {
-    return <>Loading...</>;
+    return <Text>Loading...</Text>;
   }
-
+  const [wines, setWines] = useState<Product[]>(products);
   useEffect(() => {
-    setWines(products.slice(0, 24));
+    setWines(products.slice(0, 10));
   }, []);
 
   const getNext = () => {
-    setWines(products.slice(0, wines.length + 24));
+    setWines(products.slice(0, wines.length + 10));
   };
   if (!wines) {
-    return <>Loading...</>;
+    return <Text>Loading...</Text>;
   }
 
   return (
