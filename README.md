@@ -1,6 +1,9 @@
 Wine Explorer
 =============
-This is a mobile app that allows users to explore wines and save their favorites. The app is built with React Native and Expo.
+Wine Explorer is a mobile app that allows users to search for wines and get information about them.
+you can search for wines by name, type, or region.
+it's in icelandic and only displays wines that are available in iceland.
+The app is built with React Native and Expo.
 
 
 ## Get started
