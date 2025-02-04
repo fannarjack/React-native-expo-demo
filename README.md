@@ -9,13 +9,23 @@ The app is built with React Native and Expo.
 ## Get started
 
 1. Install dependencies
+ 
   run this project locally, you need to have node.js installed on your machine. Then, clone this repository and install the dependencies:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. You need to export CategoryData and Products in node modules node_modules/vinbudin/dist/index.d.ts
+
+   go in to vinbudin in node modules. Add to the exports CategoryData and Products in line 189,
+   and remember to SAVE!
+   so instead of
+   export { getProducts };
+   you put
+   export { getProducts, Product, CategoryData };
+   
+4. Start the app
 
    ```bash
     npx expo start
